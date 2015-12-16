@@ -54,7 +54,7 @@ public class CacheableImageView extends ImageView {
      */
     public void loadImage(final String urlString) {
 
-        if (currentLoadingTask != null) {
+        if (currentLoadingTask == null) {
 
             final Context context = getContext();
 
