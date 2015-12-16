@@ -158,6 +158,8 @@ public class CacheableImageView extends ImageView {
         if (currentBitmap != null) {
             setImageBitmap(null);
             currentBitmap.recycle();
+
+            currentBitmap = null;
         }
     }
 }
